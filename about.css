@@ -1,0 +1,195 @@
+
+
+* {
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  background-color: #e6e6ff !important;
+}
+
+
+a{
+    color:white;
+  }
+  .shfooter .collapse {
+    display: inherit;
+  }
+  @media (max-width:767px) {
+    .shfooter ul {
+      margin-bottom: 0;
+    }
+  
+    .shfooter .collapse {
+      display: none;
+    }
+  
+    .shfooter .collapse.show {
+      display: block;
+    }
+  
+    .shfooter .title .fa-angle-up,
+    .shfooter .title[aria-expanded=true] .fa-angle-down {
+      display: none;
+    }
+  
+    .shfooter .title[aria-expanded=true] .fa-angle-up {
+      display: block;
+    }
+  
+    .shfooter .navbar-toggler {
+      display: inline-block;
+      padding: 0;
+    }
+  
+  }
+  
+/* about css start */
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about .row .content h3 {
+  font-size: 2.7rem;
+  color: #000;
+  margin-top: -7px;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: 'Sansita', sans-serif;
+}
+
+.about .row .content h4 {
+  font-size: 2rem;
+  color: #111;
+  margin-top: 20px;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #495157;
+  line-height: 1.8;
+}
+
+
+
+
+
+/* about css end */
+
+
+
+
+/* heading start */
+
+
+
+
+.heading {
+  position: relative;
+  padding-bottom: 2rem;
+  text-align: left;
+  font-size: 3.5rem;
+  color: rgb(34, 161, 211);
+}
+
+
+    /* WHY CHOOSE  start--------- */
+    
+    .services .box-container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 1.5rem;
+  }
+  
+
+  .services .box-container .box {
+      padding: 2.2rem;
+      text-align: center;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+  }
+  
+  .services .box-container .box img {
+      height: 12rem;
+      margin-bottom: 1rem;
+  }
+  
+  .services .box-container .box h3 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color:rgb(34, 161, 211);
+      text-transform: capitalize;
+      font-family: "Sansita", sans-serif;
+  }
+  
+  .services .box-container .box p {
+      font-size: 1.5rem;
+      color: #000;
+      line-height: 2;
+      padding: 1rem 0;
+      font-weight: 100;
+      text-transform: capitalize;
+
+
+
+  }
+
+
+
+    /* WHY CHOOSE  end--------- */
+
+
+  .resize {
+    text-align: center;
+  }
+  .resize {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+  }
+  /*RESIZESCREEN ANIMATION*/
+  .fa-angle-double-right {
+    animation: rightanime 1s linear infinite;
+  }
+  
+  .fa-angle-double-left {
+    animation: leftanime 1s linear infinite;
+  }
+  @keyframes rightanime {
+    50% {
+      transform: translateX(10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+  }
+  @keyframes leftanime {
+    50% {
+      transform: translateX(-10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  }
